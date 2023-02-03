@@ -53,7 +53,9 @@ DB_DATABASE= marvel
 DB_USERNAME=root
 DB_PASSWORD=my_password_created</code>
     </li>
-    <li>Dentro do projeto, rodar o código <code>php artisan serve</code> que rodará o servidor e mostrará o link local que está rodando. Deixar essa aba rodando</li>
+    <li>Dentro do projeto, rodar o código <code>composer update</code>  que irá buscar os arquivos do laravel</li>
+    <li>Rodar o comando <code>php artisan key:generate</code> que seta dentro do .env o APP_KEY</li>
+    <li>Rodar o código <code>php artisan serve</code> que rodará o servidor e mostrará o link local que está rodando. Deixar essa aba rodando</li>
     <li>Em uma outra aba de código, rodar<code>php artisan migrate</code> (se tiver algum dado no banco, para que ele seja LIMPADO, ou seja, iniciado do ZERO, acrescentar ao código <code>:fresh</code></li>
 </ul>
 <h3>Modelo do banco de dados</h3>
