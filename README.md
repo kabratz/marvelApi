@@ -42,7 +42,7 @@
 
 <h3>Instalação da aplicação</h3>
 <ul>
-    <li>Na pasta que deseja criar o projeto rodar <code>https://github.com/kabratz/marvelApi.git</code> que irá copiar os arquivos do projeto</li>
+    <li>Na pasta que deseja criar o projeto rodar <code> git clone https://github.com/kabratz/marvelApi.git</code> que irá copiar os arquivos do projeto</li>
     <li>Criar o banco do dados localmente (códigos a seguir MySQL dentro do banco) <code>CREATE TABLE marvel</code></li>
     <li>Criar uma cópia do arquivo <code>.env.example</code>  renomenado para <code>.env</code></li>
     <li>Editar o arquivo <code>.env</code> e colocar as configurações de conexão com o banco (foi utilizado mysql no projeto, portanto, informado os valores conforme abaixo:)<br>
