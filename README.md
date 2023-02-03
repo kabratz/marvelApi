@@ -43,7 +43,15 @@
 <h3>Instalação da aplicação</h3>
 <ul>
     <li><code>composer create-project --prefer-dist cretueusebiu/marvelProject </code></li>
-    <li>Editar o arquivo <code>.env</code> e colocar as configurações de coneção com o banco </li>
+    <li>Criar uma cópia do arquivo <code>.env.example</code>  renomenado para <code>.env</code></li>
+    <li>Editar o arquivo <code>.env</code> e colocar as configurações de coneção com o banco (foi utilizado mysql no projeto, portanto, informado os valores conforme abaixo:)<br>
+        <code>DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE= marvel
+DB_USERNAME=root
+DB_PASSWORD=my_passwor_created</code>
+    </li>
     <li>Após instalação do projeto via <code>git clone</code> ou download, rodar os códigos
         <code>php artisan key:generate</code> e <code>php artisan jwt:secret</code></li>
     <li><code>php artisan migrate </code></li>
