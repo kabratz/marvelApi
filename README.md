@@ -42,20 +42,21 @@
 
 <h3>Instalação da aplicação</h3>
 <ul>
-    <li><code>composer create-project --prefer-dist cretueusebiu/marvelProject </code></li>
+    <li>Na pasta que deseja criar o projeto rodar <code> git clone https://github.com/kabratz/marvelApi.git</code> que irá copiar os arquivos do projeto</li>
+    <li>Criar o banco do dados localmente (códigos a seguir MySQL dentro do banco) <code>CREATE TABLE marvel</code></li>
     <li>Criar uma cópia do arquivo <code>.env.example</code>  renomenado para <code>.env</code></li>
-    <li>Editar o arquivo <code>.env</code> e colocar as configurações de coneção com o banco (foi utilizado mysql no projeto, portanto, informado os valores conforme abaixo:)<br>
+    <li>Editar o arquivo <code>.env</code> e colocar as configurações de conexão com o banco (foi utilizado MySQL no projeto, portanto, informado os valores conforme abaixo:)<br>
         <code>DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE= marvel
 DB_USERNAME=root
-DB_PASSWORD=my_passwor_created</code>
+DB_PASSWORD=my_password_created</code>
     </li>
-    <li>Após instalação do projeto via <code>git clone</code> ou download, rodar os códigos
-        <code>php artisan key:generate</code> e <code>php artisan jwt:secret</code></li>
-    <li><code>php artisan migrate </code></li>
-    <li><code>npm install </code></li>
+    <li>Dentro do projeto, rodar o código <code>composer update</code>  que irá buscar os arquivos do laravel</li>
+    <li>Rodar o comando <code>php artisan key:generate</code> que seta dentro do .env o APP_KEY</li>
+    <li>Rodar o código <code>php artisan serve</code> que rodará o servidor e mostrará o link local que está rodando. Deixar essa aba rodando</li>
+    <li>Em uma outra aba de código, rodar<code>php artisan migrate</code> (se tiver algum dado no banco, para que ele seja LIMPADO, ou seja, iniciado do ZERO, acrescentar ao código <code>:fresh</code></li>
 </ul>
 <h3>Modelo do banco de dados</h3>
 <img src="https://github.com/kabratz/marvelApi/blob/master/malvelModel.png">
