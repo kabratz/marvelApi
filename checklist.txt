@@ -1,6 +1,0 @@
-1
-PUBLIC
-9c833bc78bf199886291e884d2b746cf
-PRIVATE
-9d0035051fad1d906ec3f920a0b2df82e4fd53a9
-http://gateway.marvel.com/v1/public/comics?ts=1&apikey=9c833bc78bf199886291e884d2b746cf&hash=805353fdf711a2a8b861cdd18bad9361
