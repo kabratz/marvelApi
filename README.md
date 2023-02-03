@@ -1,66 +1,67 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h1>Projeto Api Marvel</h1>
+<h3>Sobre o Desafio</h3> 
+<p>desenvolva uma aplicação que consuma a API da Marvel. Para isso, utilize a seguinte documentação: <a href="https://developer.marvel.com/docs">https://developer.marvel.com/docs</a>.</p>
+<ul>
+    <li>
+        A aplicação deve ser desenvolvida em PHP (ao menos o back-end);
+    </li>
+    <li>
+        O banco de dados preferencialmente, deve ser em MySQL;
+    </li>
+</ul>
+<p>Esse software deve pegar as informações necessárias e armazená-las em um banco de dados para serem consumidas e apresentadas em tela.</p>
+<p>O que é obrigatório ser armazenado e apresentado para cada herói?</p>
+<ul>
+    <li>
+        Nome
+    </li>
+    <li>
+        Imagem
+    </li>
+    <li>
+        Descrição
+    </li>
+</ul>
+<p>O que é obrigatório ser armazenado e apresentado para cada história do herói?</p>
+<ul>
+    <li> Título</li>
+    <li> Descrição</li>
+</ul>
+<p>Caso deseje inserir mais informações, fique à vontade.</p>
+<p>Requisitos:</p>
+<ul>
+    <li>Ter pelo menos 3 heróis</li>
+    <li>Ter pelo menos 5 histórias de cada herói</li>
+</ul>
+<p>Requisitos do software:</p>
+<ul>
+    <li>A tela deve ser responsiva;</li>
+    <li>A aplicação deve ser versionada no GitHub;</li>
+    <li>O projeto deve possuir um README (documentação) com instruções de instalação e utilização, modelo do banco de dados, bem como quaisquer outras informações que você achar necessário;</li>
+</ul>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<h3>Instalação da aplicação</h3>
+<ul>
+    <li><code>composer create-project --prefer-dist cretueusebiu/marvelProject </code></li>
+    <li>Editar o arquivo <code>.env</code> e colocar as configurações de coneção com o banco </li>
+    <li>Após instalação do projeto via <code>git clone</code> ou download, rodar os códigos
+        <code>php artisan key:generate</code> e <code>php artisan jwt:secret</code></li>
+    <li><code>php artisan migrate </code></li>
+    <li><code>npm install </code></li>
+</ul>
+<h3>Modelo do banco de dados</h3>
+<img src="https://github.com/kabratz/marvelApi/blob/master/malvelModel.png">
+
+<h3>Informações sobre a aplicação e utilização</h3>
+<p>
+    Ao entrar na aplicação, verá a página inicial. Não contendo Heróis e Histórias, os mesmos devem ser importados da api por meio da aplicação. Para isto, seguir a recomentação abaixo:
 </p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<ul>
+    <li>No menu lateral (acessível pela esquerda do cabeçalho, no botão ☰) acessar Character (heróis) OU Stories(Histórias) </li>
+    <li>Cada uma das respectivas páginas, possui um botão "Import All" (Importar todos), onde irá buscar todos as respectivas informações na API da Marvel (cada página irá importar suas informações)</li>
+    <li>Ao importar, irá aparecer na página acessada os dados disponíveis, e clicando em cada um, abrirá mais detalhes</li>
+    <li>Tendo dados no banco local, ao ir para a Home (acessada pelo menu ou pelo ícone da Marvel) irá aparecer um Breve resumo dos Heróis e Histórias (ou os que tiverem sido importados) </li>
+    <li>A única diferença do catálogo de Heróis (Characters) para o de Histórias (Stories) é que na segunda, irá aparecer os heróis vinculados às histórias.</li>
+    <li>Para um heróis ser vinculado à uma história, deve-se acessar as histórias (Stories), clicar na que deseja adicionar heróis, clicar em 'Add new Character" (adicionar novo herói), selecionar o herói que deseja adicionar e enviar (Submit). Após adicionado, ao clicar nos detalhes da história, irá aparecer os heróis vinculados</li>
+    <li>Ao clicar nas informações das histórias, também é possível remover um herói, clican em "Remove Character" abaixo de cada herói nos detalhes da história</li>
+</ul>
