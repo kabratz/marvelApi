@@ -40,7 +40,7 @@ class StoryController extends Controller
             {
                 $story = new Story([
                     'id'          => $storyImported->id,
-                    'title'       => $storyImported->title,
+                    'title'       => $storyImported->title ,
                     'description' => $storyImported->description,
                 ]);
             }

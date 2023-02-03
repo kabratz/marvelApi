@@ -9,8 +9,8 @@ class Story extends Model
 {
     protected $fillable = [
         'id',
-        'story_id',
-        'character_id'
+        'title',
+        'description'
     ];
 
     use HasFactory;
